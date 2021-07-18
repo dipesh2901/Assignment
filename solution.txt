@@ -1,0 +1,41 @@
+mkdir Assignment
+cd Assignment
+git init
+notepad file1.txt
+notepad file2.txt
+notepad file3.txt
+git add *
+git status
+git commit -m "First Commit from Master"
+git log
+git checkout -b Dev
+notepad DevFile.txt
+git add *
+git status
+git commit -m "Commit From Dev"
+git log
+git switch master
+git checkout -b Test
+notepad TestFile1.txt
+notepad TestFile2.txt
+git add *
+git status
+git commit -m "Commit From test"
+git log
+git switch master
+notepad file1.txt
+git diff
+git status
+git commit -m "Second Commit from Master"
+git log
+git merge Dev
+git merge Test
+git log
+git remote add origin https://github.com/dipesh2901/Assignment.git
+git push -u origin master
+cd ..
+mkdir Clone_Assignment
+cd Clone_Assignment
+git clone https://github.com/dipesh2901/Assignment.git
+cd Assignment
+notepad solution.txt
